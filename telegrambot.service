@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram Link Delete Bot
+After=network.target
+
+[Service]
+Type=simple
+User=your_username
+WorkingDirectory=/home/jovanijo/Documents/All_projects/Web_dev/L0/telegramlinkdeletebot
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /home/jovanijo/Documents/All_projects/Web_dev/L0/telegramlinkdeletebot/bot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target 
